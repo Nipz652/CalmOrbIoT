@@ -524,7 +524,7 @@ This project is licensed under the **MIT License** - see [LICENSE](LICENSE) file
 
 ### Authors
 
-- **Abdul Hanif Bin Abdul Aziz** ([@YOUR_GITHUB](https://github.com/YOUR_GITHUB))  
+- **Abdul Hanif Bin Abdul Aziz** ([@Nipz652](https://github.com/Nipz652))  
   - Role: IoT System Development
 
 - **Abdul Azim Bin Abdul Salam**  
