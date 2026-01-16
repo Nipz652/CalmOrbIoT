@@ -1,0 +1,21 @@
+[Unit]
+Description=StressBall Hub - Distress Response + BLE Service
+After=bluetooth.service dbus.service network.target
+Requires=bluetooth.service
+
+[Service]
+Type=simple
+ExecStart=/home/abdul/tftenv/bin/python3 -u -m services.main_service
+WorkingDirectory=/home/abdul/fyp2
+User=root
+Group=root
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONPATH=/home/abdul/fyp2
+Environment=PYTHONUNBUFFERED=1
+Environment=DBUS_SYSTEM_BUS_ADDRESS=unix:path=/var/run/dbus/system_bus_socket
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
